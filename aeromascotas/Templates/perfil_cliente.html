@@ -156,12 +156,11 @@
         <div class="perfil-usuario-header">
             <div class="perfil-usuario-portada">
                 <div class="perfil-usuario-avatar avatar">
-                  {% if False %}
-                  <img src="{{ cliente.foto_perfil.url }}" alt="Foto de {{ cliente.nombres }}">
-              {% else %}
-                  <img src="{% static 'img/foto_cliente.png' %}" alt="Sin imagen">
-              {% endif %}
-              
+                    {% if cliente.foto_perfil %}
+                        <img src="{{ cliente.foto_perfil.url }}" alt="Foto de {{ cliente.nombres }}">
+                    {% else %}
+                        <img src="{% static 'img/foto_cliente.png' %}" alt="Sin imagen">
+                    {% endif %}
                 </div>
             </div>
         </div>
