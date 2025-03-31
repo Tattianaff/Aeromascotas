@@ -68,7 +68,7 @@ SESSION_EXPIRE_AT_BROWSER_CLOSE = True
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'aeromascotas/templates')],
+        'DIRS': [os.path.join(BASE_DIR, 'aeromascotas/Templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
