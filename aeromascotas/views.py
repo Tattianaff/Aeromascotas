@@ -31,7 +31,7 @@ from datetime import datetime, timedelta
 
 
 def ver_imagen_cliente(request):
-    ruta_imagen = os.path.join(settings.MEDIA_ROOT, 'clientes/foto_cliente.png')
+    ruta_imagen = os.path.join(settings.MEDIA_ROOT, 'img/foto_cliente.png')
     if os.path.exists(ruta_imagen):
         return FileResponse(open(ruta_imagen, 'rb'), content_type='image/png')
     else:
