@@ -152,18 +152,20 @@
     <!-- perfil de usuario -->
     <div>
       <section class="seccion-perfil-usuario">
+        {% load static %}
+
         <div class="perfil-usuario-header">
             <div class="perfil-usuario-portada">
                 <div class="perfil-usuario-avatar avatar">
                     {% if cliente.foto_perfil %}
-                        <img src="{{ cliente.foto_perfil.url }}" alt="Foto de {{ cliente.nombres }}" >
+                        <img src="{{ cliente.foto_perfil.url }}" alt="Foto de {{ cliente.nombres }}">
                     {% else %}
-                        <img  src="{% get_media_prefix %}clientes/foto_cliente.png" alt="Sin imagen" >
+                        <img src="{% static 'img/foto_cliente.png' %}" alt="Sin imagen">
                     {% endif %}
-
                 </div>
             </div>
         </div>
+        
         <div class="perfil-usuario-body pb-3">
             <div class="perfil-usuario-bio">
                 <h3 class="titulo fuenteletra">{{ cliente.nombres }} {{ cliente.apellidos }}</h3>  
