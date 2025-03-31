@@ -89,7 +89,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': os.environ.get('MYSQL_DATABASE', 'railway'),
         'USER': os.environ.get('MYSQL_USER', 'root'),
-        'PASSWORD': os.environ.get('MYSQL_PASSWORD', 'mUDlLGRaECQRoIkNClVolQkHawGHgXe'),
+        'PASSWORD': os.environ.get('MYSQL_PASSWORD', 'mUDlLGRaECQRoIkNClVolQkHawGHgXeL'),
         'HOST': os.environ.get('MYSQL_HOST', 'shortline.proxy.rlwy.net'),  # Use public host
         'PORT': os.environ.get('MYSQL_PORT', '41608'),  # Use provided port
     }
